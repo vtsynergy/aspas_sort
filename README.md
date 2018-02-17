@@ -9,28 +9,26 @@ This repository provides parallel sort kernels with AVX, AVX2, and IMCI instruct
 Kaixi Hou, Hao Wang, Wu-chun Feng
 In IEEE Transactions on Parallel and Distributed Systems. (TPDS), 
 Accepted to the future issue in 2018.
-* Bibtex:  
-@InProceedings{Hou:sortext,  
-    author =    {Hou, Kaixi and Wang, Hao and Feng, Wu-chun},  
-    title =     {A Framework for the Automatic Vectorization of Parallel Sort on x86-based Processors},  
-    booktitle = {IEEE Transactions on Parallel and Distributed Systems (TPDS)},  
-    year =  {2018},  
-}
+    * Bibtex:  
+    @InProceedings{Hou:sortext,  
+        author =    {Hou, Kaixi and Wang, Hao and Feng, Wu-chun},  
+        title =     {A Framework for the Automatic Vectorization of Parallel Sort on x86-based Processors},  
+        booktitle = {IEEE Transactions on Parallel and Distributed Systems (TPDS)},  
+        year =  {2018},}
 
 2. ASPaS: A Framework for Automatic SIMDIZation of Parallel Sorting on x86-based Many-core Processors
 Kaixi Hou, Hao Wang, Wu-chun Feng
 In Proceedings of the 29th International Conference on Supercomputing (ICS), 
 Newport Beach/Irvine, CA, USA,
 June 2015.
-* Bibtex:  
-@InProceedings{Hou:aspassort,  
-    author =    {Hou, Kaixi and Wang, Hao and Feng, Wu-chun},  
-    title =     {ASPaS: A Framework for Automatic SIMDIZation of Parallel Sorting on x86-based Many-core Processors},  
-    booktitle = {29th International Conference on Supercomputing (ICS)},  
-    address =   {Newport Beach/Irvine, CA, USA},  
-    month = {June},  
-    year =  {2015},  
-}
+    * Bibtex:  
+    @InProceedings{Hou:aspassort,  
+        author =    {Hou, Kaixi and Wang, Hao and Feng, Wu-chun},  
+        title =     {ASPaS: A Framework for Automatic SIMDIZation of Parallel Sorting on x86-based Many-core Processors},  
+        booktitle = {29th International Conference on Supercomputing (ICS)},  
+        address =   {Newport Beach/Irvine, CA, USA},  
+        month = {June},  
+        year =  {2015},}
 
 ## Usage:
 You can make changes to the Makefile accordingly. Especially, you need to change the ARCH according to your GPU platform. For example, if you are using the P100, you should update ARCH to 61. The main.cu contains an example of how to use it.
