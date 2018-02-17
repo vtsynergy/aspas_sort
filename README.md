@@ -5,8 +5,7 @@ This repository provides parallel sort kernels with AVX, AVX2, and IMCI instruct
 
 
 ## Citing Our Work:
-* PlainText:  
-A Framework for the Automatic Vectorization of Parallel Sort on x86-based Processors
+1. A Framework for the Automatic Vectorization of Parallel Sort on x86-based Processors
 Kaixi Hou, Hao Wang, Wu-chun Feng
 In IEEE Transactions on Parallel and Distributed Systems. (TPDS), 
 Accepted to the future issue in 2018.
@@ -18,8 +17,7 @@ Accepted to the future issue in 2018.
     year =  {2018},  
 }
 
-* PlainText:  
-ASPaS: A Framework for Automatic SIMDIZation of Parallel Sorting on x86-based Many-core Processors
+2. ASPaS: A Framework for Automatic SIMDIZation of Parallel Sorting on x86-based Many-core Processors
 Kaixi Hou, Hao Wang, Wu-chun Feng
 In Proceedings of the 29th International Conference on Supercomputing (ICS), 
 Newport Beach/Irvine, CA, USA,
