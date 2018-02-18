@@ -31,18 +31,18 @@ June 2015.
         year =  {2015},}
 
 ## Usage:
-You can make changes to the Makefile accordingly. Especially, you need to change the ARCH according to your GPU platform. For example, if you are using the P100, you should update ARCH to 61. The main.cu contains an example of how to use it.
+All the sort codes are wrapped in aspas::sort() and aspas::sort_key() for single-threaded SIMD version and aspas::parallel_sort() and aspas::parallel_sort_key() for multi-threaded SIMD version. The usage of them are demonstrated in the testsort.cpp in the src directory. The Makefile lists different vector ISAs to compile the codes and the autorun.sh shows how to execute the codes.
 
-The following shows how to run the example codes.
+The following shows how to run the test codes using AVX2 for CPUs.
 ```
-$ make
+$ make ISA=avx2
 ```
-After compilation, run the executable as: 
+After compilation, run the executable to sort 10000 integers (i) as: 
 ```
-$ ./main.out
+$ ./testsort.out -t i -s 10000
 ```
 
-To use the segmented sort (**bb_segsort**), you just need to include the bb_sort.h (with other *.h files).  Note, bb_segsort utilizes an unstable sorting network as the building block; thus, equivalent elements are not guaranteed to keep the original relative order. We plan to provide a version to support stable sort in the future. 
+Simply put, you need to include the aspas.h to use the aspas sort (**aspas::sort**). Currently, the multi-threaded version is based on POSIX threads and we plan to provide OpenMP version in the future. 
 
 ## License: 
 Please refer to the included LICENSE file.
